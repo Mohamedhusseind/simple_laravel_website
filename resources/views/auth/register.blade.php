@@ -71,7 +71,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-0">
-                                <a href="{{url('redirect/facebook')}}">Login with facebook</a>
+                                <button style="font-size:20px" disabled><a href="{{url('redirect/facebook')}}">Login with facebook</a> <i class="fa fa-facebook-official"></i></button>
                             </div>
                         </div>
                     </form>

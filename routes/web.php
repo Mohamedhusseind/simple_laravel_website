@@ -16,11 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 Auth::routes(['verify'=>true]);
 Route::get('/', function () {
-    if (Auth::check())
-    {
+
         return view('home');
-    }
-    return view('auth.login');
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('verified');
